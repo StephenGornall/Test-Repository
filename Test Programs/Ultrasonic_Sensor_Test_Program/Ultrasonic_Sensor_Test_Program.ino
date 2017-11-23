@@ -27,14 +27,14 @@ void loop() {
   
   // Convert reading to voltage
   UltrasonicSensorVoltage1 = (UltrasonicSenorAnalogValue1 * (3.3/1023.0));
-  Serial.print("Ultrasonic Voltage: ");
-  Serial.println(UltrasonicSensorVoltage1);
+  //Serial.print("Ultrasonic Voltage: ");
+  //Serial.println(UltrasonicSensorVoltage1);
 
   // Convert voltage to distance, in cm
   // According to the data sheet using 3.3V: 3.2mV/cm
   UltrasonicSensorDistance1 = (UltrasonicSensorVoltage1/0.0032);
-  Serial.print("Ultrasonic Distance: ");
-  Serial.println(UltrasonicSensorDistance1);
+  //Serial.print("Ultrasonic Distance: ");
+  //Serial.println(UltrasonicSensorDistance1);
 
-  delay(200);
+  //delay(200);
 }
